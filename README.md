@@ -1,7 +1,7 @@
 # Install minikube
 minikube
 
-Step-1:  Install Docker.​ (Fire these commands in MasterNode and WorkerNodes)
+Step-1:  Install Docker.​ 
 
     sudo apt-get update   # Update the apt package index
       
@@ -31,7 +31,7 @@ Step-1:  Install Docker.​ (Fire these commands in MasterNode and WorkerNodes)
      sudo service docker status  # press q to exit
 
 
-Step-2: Install kubelet, Kubeadm, Kubectl.​ (Fire these commands in MasterNode and workerNodes)
+Step-2: Install Kubectl.​ 
    
     sudo apt-get update        # Update the apt package
     
@@ -42,3 +42,17 @@ Step-2: Install kubelet, Kubeadm, Kubectl.​ (Fire these commands in MasterNode
     sudo apt-get update
     
     sudo apt-get install -y kubectl           #install kubect
+
+
+Step-3: Install Minikube.​ 
+
+    sudo apt-get update        # Update the apt package
+    
+    sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg       # Download the google public key
+    
+    sudo apt-get update
+    
+    sudo apt-get install -y kubectl           #install kubect
+
+
+
