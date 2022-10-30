@@ -46,13 +46,9 @@ Step-2: Install Kubectl.​
 
 Step-3: Install Minikube.​ 
 
-    sudo apt-get update        # Update the apt package
-    
-    sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg       # Download the google public key
-    
-    sudo apt-get update
-    
-    sudo apt-get install -y kubectl           #install kubect
+   sudo minikube start --driver=docker --force
+   
+   kubectl get node
 
 
 
