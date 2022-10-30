@@ -48,9 +48,9 @@ Step-2: Install Minikube.​
    
     
     
-    sudo minikube start --driver=docker --force
+    sudo minikube start --driver=docker --force   # Install minikube
     
-    kubectl get node
+    kubectl get node                 # Check the node status
     
    
 
