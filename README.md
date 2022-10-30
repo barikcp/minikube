@@ -44,17 +44,19 @@ Step-2: Install Kubectl.​
     sudo apt-get install -y kubectl           #install kubect
 
 
-Step-3: Install Minikube.​ 
+Step-2: Install Minikube.​ 
+   
+    sudo apt-get update        # Update the apt package
+    
+    sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg       # Download the google public key
+    
+    echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee    /etc/apt/sources.list.d/kubernetes.list     #Add the Kubernetes apt repository
+    
+    sudo apt-get update
+    
+    sudo apt-get install -y kubectl           #install kubect
 
-  sudo apt-get update        # Update the apt package
 
-  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg       # Download the google public key
-
-  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee    /etc/apt/sources.list.d/kubernetes.list     #Add the Kubernetes apt repository
-
-  sudo apt-get update
-
-  sudo apt-get install -y kubectl           #install kubect
-
+ 
 
 
