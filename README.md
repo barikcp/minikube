@@ -50,9 +50,9 @@ Step-2: Install Minikube.​
     
     sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg       # Download the google public key
     
-    echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee    /etc/apt/sources.list.d/kubernetes.list     #Add the Kubernetes apt repository
+    sudo minikube start --driver=docker --force
     
-    sudo apt-get update
+    kubectl get node
     
     sudo apt-get install -y kubectl           #install kubect
 
