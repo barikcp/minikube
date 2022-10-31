@@ -44,7 +44,7 @@ Step-2: Install Kubectl.​
     sudo apt-get install -y kubectl           #install kubectl
 
 
-Step-2: Install Minikube.​ 
+Step-3: Install Minikube.​ 
    
     
     
